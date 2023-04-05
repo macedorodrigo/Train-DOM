@@ -70,6 +70,11 @@ input:focus {
   outline: 2px solid #006dfb;
 }
 
+#input {
+  display: block;
+  margin: 0 auto;
+}
+
 .tech {
   transform: translateY(-20px);
 }

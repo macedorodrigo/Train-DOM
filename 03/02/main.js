@@ -21,17 +21,17 @@ input.addEventListener('input', (event => {
   tech.innerText = event.target.value
 }))
 
-const gitHub = () => {
-    window.location.replace('https://www.github.com/macedorodrigo')
-}
-favoriteTech.addEventListener('dblclick', gitHub)
-// redirecione para alguma página.
-// 4.1. Que tal redirecionar para seu portfólio? Dica: Lembre-se dos métodos `window.location.replace` e `window.open`.
+favoriteTech.addEventListener('dblclick', () => {
+  window.open('https://www.github.com/macedorodrigo')
+})
 
-// 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
-// a cor do mesmo.
+favoriteTech.addEventListener('mouseover', (event) => {
+  event.target.style.color = 'purple'
+})
 
-// Segue abaixo um exemplo de uso do event.target.
+favoriteTech.addEventListener('mouseout', (event) => {
+  event.target.style.color = ''
+})
 
 const resetText = (event) => {
   // O event é passado como um parâmetro para a função.
