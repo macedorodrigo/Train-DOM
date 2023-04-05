@@ -5,6 +5,4 @@ Este repositório contém um projeto de treinamento da manipulação do DOM util
 ## Tecnologias utilizadas
 - HTML5
 - CSS3
-- 1JavaScript
-
-  Colocando um parágrafo com um espaçamento.
+- JavaScript
