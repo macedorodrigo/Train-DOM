@@ -2,7 +2,8 @@ const firstLi = document.getElementById('first-li');
 const secondLi = document.getElementById('second-li');
 const thirdLi = document.getElementById('third-li');
 const input = document.getElementById('input');
-const myWebpage = document.getElementById('my-spotrybefy');
+const favoriteTech = document.querySelector('#my-favorite-tech')
+
 
 const handleClassTech = (event) => {
   const tech = document.querySelector('.tech')
@@ -14,14 +15,17 @@ const handleClassTech = (event) => {
 firstLi.addEventListener('click', handleClassTech)
 secondLi.addEventListener('click', handleClassTech)
 thirdLi.addEventListener('click', handleClassTech)
-// 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
-// com a classe 'tech'.
+
 input.addEventListener('input', (event => {
   const tech = document.querySelector('.tech')
   tech.innerText = event.target.value
 }))
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy',
+const gitHub = () => {
+    window.location.replace('https://www.github.com/macedorodrigo')
+}
+favoriteTech.addEventListener('dblclick', gitHub)
 // redirecione para alguma página.
 // 4.1. Que tal redirecionar para seu portfólio? Dica: Lembre-se dos métodos `window.location.replace` e `window.open`.
 
