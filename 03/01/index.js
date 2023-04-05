@@ -22,10 +22,11 @@ button.value = 'Click here'
 button.onclick = maisInfos;
 main.appendChild(button)
 
-
-windown.onload = newCall
-
 const newCall = () => {
-  alert('pizza pronta')
-  alert('Pizza à caminho')
+  alert('Página pronta')
+  alert('Página carregada')
 }
+
+window.onload = newCall
+
+alert('Isso')
