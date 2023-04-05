@@ -21,7 +21,6 @@ input.addEventListener('input', (event => {
   tech.innerText = event.target.value
 }))
 
-// 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy',
 const gitHub = () => {
     window.location.replace('https://www.github.com/macedorodrigo')
 }
